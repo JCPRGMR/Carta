@@ -11,6 +11,8 @@
     <input type="checkbox" name="" id="pin">
     <div class="carta">
         <label class="pin" for="pin">🌲❤️❤️🌲❤️❤️🌲</label>
+        📢 
+        <a href="https://www.youtube.com/watch?v=LPjZoJb-uFE&list=RDLPjZoJb-uFE&start_radio=1">Never Be Alon</a> <input type="range" min="0" max="1" step="0.01" value="0.2" id="volumen">
         <div class="cuerpo">
             Felicese fiestas babosa
             <div class="contenido">
@@ -27,6 +29,15 @@
         </div>
     </div>
     <div class="sobre">
+        <audio src="sources/Never Be Alone - Shawn Mendes (Lyrics + Sub. Español) - chicx sxd.mp3" controls id="miAudio" autoplay></audio>
     </div>
 </body>
 </html>
+<script>
+  const audio = document.getElementById('miAudio');
+  const slider = document.getElementById('volumen');
+
+  slider.addEventListener('input', () => {
+    audio.volume = slider.value;
+  });
+</script>
